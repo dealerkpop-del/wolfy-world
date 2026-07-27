@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wolfy World</title>
+    <title>Wolfy World - Inicio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div id="game-container">
-        <!-- Pantalla de diálogo inicial -->
+        <!-- Diálogo -->
         <div id="dialogue-screen">
             <div class="dialogue-box">
                 <div class="speaker-name" id="speaker">???</div>
@@ -17,57 +17,39 @@
             </div>
         </div>
 
-        <!-- Input de nombre -->
+        <!-- Input Nombre -->
         <div id="name-input-screen">
             <div class="name-input-container">
-                <h2>¿Cómo te llamas?</h2>
-                <input type="text" id="nickname-input" placeholder="Tu nombre..." maxlength="20">
+                <h2>¿Cómo te llamas, viajero?</h2>
+                <input type="text" id="nickname-input" placeholder="Tu nombre..." maxlength="15">
                 <br>
                 <button class="continue-btn" onclick="submitName()">Aceptar</button>
             </div>
         </div>
 
-        <!-- Pantalla de carga -->
+        <!-- Carga -->
         <div id="loading-screen">
-            <div class="loading-text">Cargando datos básicos...</div>
-            <div class="loading-bar-container">
-                <div class="loading-bar" id="loading-bar"></div>
-            </div>
+            <div class="loading-text">Cargando mundo Wolfy...</div>
+            <div class="loading-bar-container"><div class="loading-bar" id="loading-bar"></div></div>
             <div class="loading-percentage" id="loading-percentage">0%</div>
         </div>
 
-        <!-- Transición a blanco -->
+        <!-- Transición -->
         <div id="white-transition"></div>
 
         <!-- Tutorial -->
         <div id="tutorial-screen">
-            <h1 class="tutorial-title">Conoce a tus compañeros</h1>
+            <h1 class="tutorial-title">Tu equipo inicial</h1>
+            <p class="tutorial-sub">Cada Lobito controla un color de orbe</p>
             <div class="characters-grid">
-                <div class="character-card">
-                    <div class="character-icon">🐺</div>
-                    <div class="character-name">Lobito</div>
-                    <div class="character-role">El líder valiente</div>
-                </div>
-                <div class="character-card">
-                    <div class="character-icon">⚔️</div>
-                    <div class="character-name">Lobito Espadachín</div>
-                    <div class="character-role">Maestro del combate</div>
-                </div>
-                <div class="character-card">
-                    <div class="character-icon">🏹</div>
-                    <div class="character-name">Lobito Arquero</div>
-                    <div class="character-role">Precisión letal</div>
-                </div>
-                <div class="character-card">
-                    <div class="character-icon">📚</div>
-                    <div class="character-name">Lobito Escolar</div>
-                    <div class="character-role">Estratega inteligente</div>
-                </div>
+                <div class="character-card"><div class="character-icon">⬜</div><div class="character-name">Lobito</div><div class="character-role">Neutral</div></div>
+                <div class="character-card"><div class="character-icon"></div><div class="character-name">Espadachín</div><div class="character-role">Dominancia</div></div>
+                <div class="character-card"><div class="character-icon"></div><div class="character-name">Arquero</div><div class="character-role">Precisión</div></div>
+                <div class="character-card"><div class="character-icon"></div><div class="character-name">Escolar</div><div class="character-role">Inteligencia</div></div>
             </div>
             <button class="start-game-btn" onclick="startGame()">¡Comenzar Aventura!</button>
         </div>
     </div>
-
     <script src="game.js"></script>
 </body>
 </html>
