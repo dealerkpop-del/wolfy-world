@@ -8,9 +8,9 @@
 </head>
 <body>
     <div id="battle-container">
-        <!-- HUD Superior -->
+        <!-- Enemigo -->
         <div id="enemy-hud">
-            <div class="enemy-sprite" id="enemy-sprite">🌳</div>
+            <div class="enemy-sprite">🌳</div>
             <div class="enemy-info">
                 <h2 id="enemy-name">Tronco Místico</h2>
                 <div class="hp-bar-container">
@@ -20,7 +20,7 @@
             </div>
         </div>
 
-        <!-- HUD Jugador -->
+        <!-- Jugador -->
         <div id="player-hud">
             <h3 id="player-name-display">Jugador</h3>
             <div class="hp-bar-container player">
@@ -52,16 +52,16 @@
                 <div class="card-color verde"></div>
             </div>
             <div class="card" onclick="playCard('azul')">
-                <div class="card-icon"></div>
+                <div class="card-icon">📚</div>
                 <div class="card-name">Escolar</div>
                 <div class="card-color azul"></div>
             </div>
         </div>
 
-        <!-- Mensajes -->
+        <!-- Overlay final -->
         <div id="message-overlay" class="hidden">
             <h1 id="message-text">¡Victoria!</h1>
-            <button onclick="location.reload()">Reiniciar</button>
+            <button onclick="location.href='index.html'">Volver al menú</button>
         </div>
     </div>
     <script src="battle.js"></script>
